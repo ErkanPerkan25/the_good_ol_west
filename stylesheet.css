@@ -2,9 +2,14 @@
     box-sizing: border-box;    
 }
 
+body{
+    color: #ffffff;
+}
+
 header{
     height: 700px;
 }
+
 
 .bg-img{
     background-image: url(images/bucking.jpg);
@@ -17,15 +22,54 @@ header h1{
     margin-top: 250px;
     font-size: 6rem; 
     color: #ffffff;
+    border: solid 4px #ffffff;
+    border-radius: 8px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #a86e3c;
 }
 
 #rodeos{
     list-style-type: none;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #rodeos li{
-
+    font-size: 1.3rem;
+    margin: 10px;
+    background-color: #db6702;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+#rodeos li a{
+    text-decoration: none;
+    color: white;
+}
+
+#rodeo-events{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+#rodeo-events li{
+    display: inline-block; 
+    text-align: center;
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 @media screen (max-width: 990px){
 }
