@@ -10,6 +10,9 @@ header{
     height: 700px;
 }
 
+main p{
+    font-size: 1.2rem;
+}
 
 .bg-img{
     background-image: url(images/bucking.jpg);
@@ -70,6 +73,32 @@ header h1{
     margin-left: auto;
 }
 
-
-@media screen (max-width: 990px){
+#cowboy-tools{
+    list-style-type: none;
 }
+
+#cowboy-tools li{
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 550px){
+    #logo{
+        font-size: 4rem;
+    }
+
+    #horseshoe{
+        width: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 992px){
+    #cowboy-tools li{
+        display: inline-block;
+        width: 19%;
+    }
+}
+
+
+
+

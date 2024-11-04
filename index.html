@@ -4,66 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Good Ol West</title>
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
 
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
 </head>
 <body>
+    <!-- What has challenged me is using the Bootstrap rows and columns, and understanding 
+    how they are used for making a responsive layout for the website-->
     <div class="container-fluid">
         <header class="row bg-img">
             <div class="col-sm-12 col-md-12 col-lg-12"> 
-                <h1 class="text-center"><b>The Good Ol' West</b></h1>
+                <h1 id="logo" class="text-center"><b>The Good Ol' West</b></h1>
             </div>
         </header>
 
-        <nav>
-        </nav>
-
         <main class="row">
-            <div class="col-sm-12 col-md-2 col-lg-2 text-center" style="background-color: #3a2716;">
-                <h5>Rodeos</h5>
+            <div class="col-sm-12 col-md-3 col-lg-2 text-center" style="background-color: #3a2716;">
+                <h4>Rodeos</h4>
                 <!-- Citation for rodeos: https://horseyhooves.com/famous-rodeos/ -->
                 <ul id="rodeos">
                     <li><a href="https://www.rodeohouston.com/" target="_blank">Houston Livestock Show and Rodeo</a></li>
-                    <li><a href="">Calgary Stampede</a></li>
-                    <li><a href="">Cheyenne Frontier Days</a></li>
-                    <li><a href="">National Finals Rodeo</a></li>
+                    <li><a href="https://www.calgarystampede.com/" target="_blank">Calgary Stampede</a></li>
+                    <li><a href="https://cfdrodeo.com/" target="_blank">Cheyenne Frontier Days</a></li>
+                    <li><a href="https://www.nfrexperience.com/" target="_blank">National Finals Rodeo</a></li>
                 </ul>
             </div>
             
-            <div class="col-sm-12 col-md-10 col-lg-8" style="background-color: #a86e3c;">
-                <h2 class="text-center">Welcome to the West!</h2>
+            <div class="col-sm-12 col-md-9 col-lg-8" style="background-color: #a86e3c;">
+                <h2 class="text-center"><b>Welcome to the West!</b></h2>
+                <br>
                 
+                <!--Citation for information: https://en.wikipedia.org/wiki/Rodeo#Rodeo_organizations -->
+                <p class="text-center" style="width: 75%; margin-left: auto; margin-right: auto;">Rodeo is a competivive equestrian sport that focus on practice of hearding cattle. It as originaly
+                originated from Spain and Mexico, but later expanded to the western United States, western Canada and
+                northern Mexico. American Rodeo consists of: </p>
+
                 <ul id="rodeo-events">
                     <!--Citation for image: https://clipart-library.com/clip-art/bucking-bronco-silhouette-6.htm-->
-                    <li><h6>Bareback/Saddle Bronc</h6><img src="images/bucking_icon.png" style="width: 60%;"/></li>
+                    <li><h6>Bareback/Saddle Bronc</h6><img src="images/bucking_icon.png" alt="bronco_riding" style="width: 60%;"/></li>
                     <!--Citation for image: https://clipart-library.com/clip-art/roping-silhouette-1.htm-->
-                    <li><h6>Team roping</h6><img src="images/roping_icon.png" style="width: 50%;"/></li>
+                    <li><h6>Team roping</h6><img src="images/roping_icon.png" alt="roping" style="width: 50%;"/></li>
                     <!--Citation for image: https://clipart-library.com/clip-art/bull-rider-silhouette-clip-art-2.htm-->
-                    <li><h6>Bull riding</h6><img src="images/bullriding_icon.png" style="width: 45%;"/></li>
+                    <li><h6>Bull riding</h6><img src="images/bullriding_icon.png" alt="bull_riding" style="width: 45%;"/></li>
                     <!--Citation for image: https://www.decalcity.com/steer-wrestler-p-17096.html--> 
-                    <li><h6>Steer Wrestling</h6><img src="images/steer_wrestling_icon.png" style="width: 40%;"/></li>
+                    <li><h6>Steer Wrestling</h6><img src="images/steer_wrestling_icon.png" alt="steer_wrestling" style="width: 40%;"/></li>
                     <!--Citation for image: https://clipart-library.com/clip-art/breakaway-roping-silhouette-6.htm -->
-                    <li><h6>Tie down roping</h6><img src="images/tie_down_roping_icon.png" style="width: 70%;"/></li>
+                    <li><h6>Tie down roping</h6><img src="images/tie_down_roping_icon.png" alt="tie_down_roping" style="width: 70%;"/></li>
                     <!--Citation for image: https://clipground.com/barrel-racing-clipart.html-->
-                    <li><h6>Barell Racing</h6><img src="images/barrel_racing_icon.jpg" style="width: 35%;"/></li>
+                    <li><h6>Barell Racing</h6><img src="images/barrel_racing_icon.jpg" alt="barell_racing" style="width: 35%;"/></li>
                 </ul>
+               
+
+                <h3 class="text-center">History</h3>
+                <!--Citation for image: https://www.nytimes.com/2022/08/16/nyregion/cowtown-rodeo-new-jersey.html-->
+                <img src="images/rodeo.jpg" alt="rodeo" style="width: 85%; margin-left: 8%; margin-right: auto; margin-top: 20px;"/>
+                <!--Citation for information: https://en.wikipedia.org/wiki/Rodeo#Rodeo_organizations -->
+                <p class="text-center" style="width: 75%; margin-left: auto; margin-right: auto;">
+                    Many rodeo events were based on the tasks required by cattle ranching. 
+                    The working cowboy developed skills to fit the needs of the terrain and climate 
+                    of the American west, and there were many regional variations. Some of the 
+                    skills required to manage cattle and horses date back to the 16th-century rodeo traditions
+                </p>
 
             </div>
             
             <div class="col-sm-12 col-md-12 col-lg-2" style="background-color: #3a2716;">
-                <h2>Yehaw!</h2>
-                <ul>
+                <h4 class="text-center">Yeehaw! Tools!</h4>
+                <ul id="cowboy-tools">
                     <!--Citation for image: https://www.pngall.com/western-cowboy-hat-png/-->
-                    <li><img /></li>
+                    <li><img src="images/cowboy_hat.png" alt="cowboy_hat" style="width: 75%;"/></li>
+                    <!--Citation for image: https://webstockreview.net/explore/lasso-clipart-brown-rope/-->
+                    <li><img src="images/lasso_rope.png" alt="lasso_rope" style="width: 75%;"/></li>
+                    <!--Citation for image: https://www.stickpng.com/img/people/cowboys/pair-of-cowboy-boots-->
+                    <li><img src="images/cowboy_boots.png" alt="cowboy_boots" style="width: 75%;"/></li>
+                    <!--Citation for image: https://www.corralwestern.com/ce-3-4-chap-guard-cowboy-series-spurcs1034cg.html-->
+                    <li><img src="images/spurrs.jpg" alt="spurrs" style="width: 75%;"/></li>
+                    <!--Citation for image: https://www.stickpng.com/img/download/59cfcaadd3b1936210a5dde5-->
+                    <li><img src="images/bronco_saddle.png" alt="bronco_saddle" style="width: 75%;"/></li>
                 </ul>
             </div>
         </main>
 
         <footer class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: ;">
+            <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #a86e3c;">
+                <h3 class="text-center m-3">The Good Ol' West</h3>
+                <img src="images/bucking_icon.png" alt="bucking" style="width: 20%; margin-right: auto; margin-left: 40%;">
+
+                <i class="bi bi-c-circle" style="font-size: 1.5rem; text-align: center; 
+                    display: block; width: 70%; margin-left: 15%; margin-right: 15%;">opyright 2024</i>
+
             </div>
         </footer>
     </div>
